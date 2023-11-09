@@ -14,5 +14,31 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    apellido: {
+      type: DataTypes.STRING,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    dni: {
+      type: DataTypes.INTEGER,
+    },
+    carrera: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    telefono: {
+      type: DataTypes.INTEGER,
+    },
+    cuota: {
+      type: DataTypes.INTEGER,
+    },
+    numeroderecibo: {
+      type: DataTypes.INTEGER,
+    },
+    numerodesocio: {
+      type: DataTypes.INTEGER,
+    },
   },{timestamps: false});
 };
