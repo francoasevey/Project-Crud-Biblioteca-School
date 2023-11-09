@@ -40,5 +40,13 @@ module.exports = (sequelize) => {
     numerodesocio: {
       type: DataTypes.INTEGER,
     },
+    image: {
+      type: DataTypes.STRING,
+    },
+    created: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: true
+    }
   },{timestamps: false});
 };

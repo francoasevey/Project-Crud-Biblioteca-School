@@ -17,10 +17,6 @@ module.exports = (sequelize) => {
     apellido: {
       type: DataTypes.STRING,
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     dni: {
       type: DataTypes.INTEGER,
     },
@@ -31,14 +27,23 @@ module.exports = (sequelize) => {
     telefono: {
       type: DataTypes.INTEGER,
     },
-    cuota: {
+    librosolicitado: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    codigodelibro: {
       type: DataTypes.INTEGER,
     },
-    numeroderecibo: {
-      type: DataTypes.INTEGER,
+    fechadesolicitud: {
+      type: DataTypes.DATEONLY,
     },
-    numerodesocio: {
-      type: DataTypes.INTEGER,
+    fechadereintegro: {
+      type: DataTypes.DATEONLY,
     },
+    created: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: true
+    }
   },{timestamps: false});
 };
