@@ -1,5 +1,5 @@
 const axios = require('axios');
-const {Socio, Prestamos, Materiales} = require('../db');
+const {Socio, Prestamos} = require('../db');
 
 const GetSocio = async () => {
   try {
