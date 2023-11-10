@@ -19,14 +19,12 @@ module.exports = (sequelize) => {
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
     dni: {
       type: DataTypes.INTEGER,
     },
     carrera: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
     telefono: {
       type: DataTypes.INTEGER,
