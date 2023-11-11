@@ -13,7 +13,7 @@ router.get('/', async (req,res, next) =>{
          const name = req.query.name//busqueda por query "/bulbasaur"
          const socios = await GetSocio();//cambiar por getDbInfo(); cuando cargue la db
          
-         /*let full = await Pokemon.findAll({
+         let full = await Socio.findAll({
              include: {
              model: Type,
               },
@@ -21,8 +21,8 @@ router.get('/', async (req,res, next) =>{
               if (!full.length) {
                  // bulkCreate busca los campos en el objeto y los pasa a la tabla
                  // los datos del objeto para los que no hay campos en la tabla, no los guarda
-                 await Pokemon.bulkCreate(pokemons);
-                  } */
+                 await Socio.bulkCreate(socios);
+                  } 
      if (name){
          let socioName = await socios.filter(el => el.name.toLowerCase().includes(name.toLowerCase()))
          socioName.length ? 
